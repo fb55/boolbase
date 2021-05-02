@@ -1,8 +1,8 @@
 module.exports = {
-	trueFunc: function trueFunc(){
+	trueFunc: () => {
 		return true;
 	},
-	falseFunc: function falseFunc(){
+	falseFunc: () => {
 		return false;
-	}
+	},
 };
