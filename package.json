@@ -1,10 +1,23 @@
 {
   "name": "boolbase",
-  "version": "1.0.0",
+  "version": "2.0.0",
+  "type": "module",
   "description": "two functions: One that returns true, one that returns false",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "node tests.js"
+    "build": "tsc",
+    "test": "npm run build && node --test",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -19,5 +32,14 @@
   "bugs": {
     "url": "https://github.com/fb55/boolbase/issues"
   },
-  "homepage": "https://github.com/fb55/boolbase"
+  "homepage": "https://github.com/fb55/boolbase",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "funding": {
+    "url": "https://github.com/sponsors/fb55"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
 }
