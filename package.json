@@ -1,6 +1,6 @@
 {
   "name": "boolbase",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "type": "module",
   "description": "two functions: One that returns true, one that returns false",
   "main": "dist/index.js",
