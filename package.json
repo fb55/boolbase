@@ -18,6 +18,7 @@
     ],
     "scripts": {
         "build": "tsc",
+        "lint:ts": "tsc --noEmit",
         "test": "npm run build && node --test",
         "prepare": "npm run build"
     },
